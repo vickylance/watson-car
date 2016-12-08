@@ -49,6 +49,6 @@ io.on('connection', function (socket) {
     });
 });
 
-http.listen(3000 || process.env.PORT, function () {
-    console.log('listening on *:3000');
+http.listen(process.env.port|| process.env.PORT || 3978, function () {
+    console.log("Connected"); 
 });
