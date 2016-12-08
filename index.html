@@ -61,13 +61,13 @@
     <script src="./jquery.min.js"></script>
     <script>
         var socket = io();
-        $('form').submit(function(){
-          socket.emit('chat message', $('#m').val());
-          $('#m').val('');
+        jQuery('form').submit(function(){
+          socket.emit('chat message', jQuery('#m').val());
+          jQuery('#m').val('');
           return false;
         });
         socket.on('chat message', function(msg){
-          $('#messages').append($('<li>').text(msg));
+          jQuery('#messages').append(jQuery('<li>').text(msg));
         });
     </script>
 </body>
