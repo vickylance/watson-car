@@ -28,7 +28,7 @@ function sendWatsonMsg(message) {
         } else {
             // console.log(JSON.stringify(response, null, 2));
             console.log('context: '+ context);
-            io.emit('chat message', response);
+            io.emit('chat message', JSON.stringify(response, null, 2));
         }
     });
 }
