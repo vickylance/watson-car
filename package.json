@@ -1,0 +1,23 @@
+{
+  "name": "watson-car",
+  "version": "1.0.0",
+  "description": "watson car example",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vickylance/watson-car.git"
+  },
+  "keywords": [
+    "watson",
+    "ibm"
+  ],
+  "author": "s.vignesh, pandurengaraj.b",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vickylance/watson-car/issues"
+  },
+  "homepage": "https://github.com/vickylance/watson-car#readme"
+}
