@@ -4,8 +4,8 @@ var io = require('socket.io')(http);
 var watson = require('watson-developer-cloud');
 
 var conversation = watson.conversation({
-    username: 'a5e6bf71-284f-4bcf-8f65-47c67d72a789',
-    password: 'JYQV1pPXwFl7',
+    username: process.env.USERNAME,
+    password: process.env.PASSWORD,
     version: 'v1',
     version_date: '2016-09-20'
 });
