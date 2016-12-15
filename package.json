@@ -4,7 +4,9 @@
   "main": "index.js",
   "description": "watson car example",
   "dependencies": {
+    "browserify": "^13.1.1",
     "express": "^4.10.2",
+    "path": "^0.12.7",
     "socket.io": "^1.7.1",
     "watson-developer-cloud": "^2.11.1"
   },
