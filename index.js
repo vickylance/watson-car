@@ -7,16 +7,9 @@ var path = require("path");
 console.log(". = %s", path.resolve("."));
 console.log("__dirname = %s", path.resolve(__dirname));
 
-// var conversation = watson.conversation({
-//     username: process.env.USERNAME,
-//     password: process.env.PASSWORD,
-//     version: 'v1',
-//     version_date: '2016-09-20'
-// });
-
 var conversation = watson.conversation({
-    username: 'a5e6bf71-284f-4bcf-8f65-47c67d72a789',
-    password: 'JYQV1pPXwFl7',
+    username: process.env.USERNAME,
+    password: process.env.PASSWORD,
     version: 'v1',
     version_date: '2016-09-20'
 });
@@ -65,10 +58,10 @@ io.on('connection', function (socket) {
     });
 });
 
-// http.listen(process.env.port || process.env.PORT || 3978, function () {
-//     console.log("Connected");
-// });
-
-http.listen(3000, function () {
+http.listen(process.env.port || process.env.PORT || 3978, function () {
     console.log("Connected");
 });
+
+// http.listen(3000, function () {
+//     console.log("Connected");
+// });
